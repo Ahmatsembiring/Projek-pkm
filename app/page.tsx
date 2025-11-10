@@ -75,7 +75,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto text-center space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-1000">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-card rounded-full border border-border hover:border-primary smooth-transition">
             <Sparkles size={16} className="text-primary animate-pulse" />
-            <span className="text-sm font-medium">Welcome to ahmat-studio</span>
+            <span className="text-sm font-medium">Welcome to projek-ppkm</span>
           </div>
 
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight text-balance">
