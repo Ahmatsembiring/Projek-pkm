@@ -1,0 +1,193 @@
+"use client"
+
+import Link from "next/link"
+import { ArrowRight, Sparkles } from "lucide-react"
+import ProjectCard from "@/components/project-card"
+import NewsCard from "@/components/news-card"
+
+const featuredProjects = [
+  {
+    id: 1,
+    title: "Brand Identity System",
+    category: "Branding",
+    image: "/modern-brand-identity-with-colors-and-typography.jpg",
+    description: "Complete brand identity with logo, colors, and guidelines",
+  },
+  {
+    id: 2,
+    title: "Digital Product Design",
+    category: "UI/UX",
+    image: "/digital-product-interface.png",
+    description: "Comprehensive design system for digital products",
+  },
+  {
+    id: 3,
+    title: "Marketing Campaign",
+    category: "Marketing",
+    image: "/creative-marketing-campaign-visual.jpg",
+    description: "Integrated marketing campaign across multiple channels",
+  },
+  {
+    id: 4,
+    title: "Website Redesign",
+    category: "Web Design",
+    image: "/modern-website-design-layout.jpg",
+    description: "Modern responsive website with interactive elements",
+  },
+]
+
+const recentNews = [
+  {
+    id: 1,
+    title: "Launching New Design Services",
+    date: "07 Nov 2025",
+    category: "Announcement",
+    views: 124,
+    image: "/new-design-services-announcement.jpg",
+  },
+  {
+    id: 2,
+    title: "Winning International Design Award",
+    date: "05 Nov 2025",
+    category: "Achievement",
+    views: 89,
+    image: "/design-award-trophy-achievement.jpg",
+  },
+  {
+    id: 3,
+    title: "Studio Expansion to New Office",
+    date: "02 Nov 2025",
+    category: "News",
+    views: 156,
+    image: "/modern-office-interior.png",
+  },
+]
+
+export default function Home() {
+  return (
+    <div className="w-full">
+      {/* Hero Section */}
+      <section className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 py-20 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-emerald-50 via-white to-teal-50 dark:from-emerald-950/20 dark:via-background dark:to-teal-950/20 -z-10" />
+        <div className="absolute top-0 right-0 w-96 h-96 bg-emerald-100 dark:bg-emerald-900/20 rounded-full blur-3xl opacity-20 -z-10" />
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-teal-100 dark:bg-teal-900/20 rounded-full blur-3xl opacity-20 -z-10" />
+
+        <div className="max-w-4xl mx-auto text-center space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-1000">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-card rounded-full border border-border hover:border-primary smooth-transition">
+            <Sparkles size={16} className="text-primary animate-pulse" />
+            <span className="text-sm font-medium">Welcome to ahmat-studio</span>
+          </div>
+
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight text-balance">
+            <span className="gradient-text">Creative Solutions</span>
+            <br />
+            for Your Brand
+          </h1>
+
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto text-pretty">
+            Transform your vision into reality with our expert team of designers, strategists, and creators. We craft
+            experiences that inspire and engage.
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
+            <Link
+              href="/portfolio"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 smooth-transition font-medium shadow-lg hover:shadow-xl"
+            >
+              View Portfolio
+              <ArrowRight size={18} />
+            </Link>
+            <Link
+              href="/kontak"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-border rounded-lg hover:bg-card smooth-transition font-medium"
+            >
+              Get In Touch
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-3 gap-4 pt-12 max-w-md mx-auto text-sm">
+            <div>
+              <p className="font-bold text-2xl text-primary">150+</p>
+              <p className="text-muted-foreground text-xs">Projects Done</p>
+            </div>
+            <div>
+              <p className="font-bold text-2xl text-primary">50+</p>
+              <p className="text-muted-foreground text-xs">Happy Clients</p>
+            </div>
+            <div>
+              <p className="font-bold text-2xl text-primary">12</p>
+              <p className="text-muted-foreground text-xs">Awards Won</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Featured Projects */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-card">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold mb-4">Featured Projects</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">Showcase of our latest and greatest work</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            {featuredProjects.map((project) => (
+              <ProjectCard key={project.id} project={project} />
+            ))}
+          </div>
+
+          <div className="text-center">
+            <Link
+              href="/portfolio"
+              className="inline-flex items-center gap-2 text-primary hover:gap-3 smooth-transition font-medium group"
+            >
+              View All Projects
+              <ArrowRight size={18} className="group-hover:translate-x-1 smooth-transition" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Recent News */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold mb-4">Recent News</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">Latest updates and announcements</p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6 mb-12">
+            {recentNews.map((news) => (
+              <NewsCard key={news.id} news={news} />
+            ))}
+          </div>
+
+          <div className="text-center">
+            <Link
+              href="/berita"
+              className="inline-flex items-center gap-2 text-primary hover:gap-3 smooth-transition font-medium group"
+            >
+              Read All News
+              <ArrowRight size={18} className="group-hover:translate-x-1 smooth-transition" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-emerald-500 to-teal-500 dark:from-emerald-600 dark:to-teal-600">
+        <div className="max-w-4xl mx-auto text-center text-white space-y-6">
+          <h2 className="text-4xl font-bold">Ready to Start Your Project?</h2>
+          <p className="text-lg opacity-90">Let's collaborate and create something amazing together</p>
+          <Link
+            href="/kontak"
+            className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-white text-emerald-600 hover:bg-emerald-50 rounded-lg smooth-transition font-medium shadow-lg"
+          >
+            Contact Us Today
+            <ArrowRight size={18} />
+          </Link>
+        </div>
+      </section>
+    </div>
+  )
+}
