@@ -9,14 +9,10 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-emerald-500 to-teal-500 rounded-lg flex items-center justify-center text-white font-bold">
-                AS
-              </div>
-              <span className="font-bold">projek-pkm</span>
+              <div className="w-10 h-10 bg-gradient-to-br from-emerald-500 to-teal-500 rounded-lg flex items-center justify-center text-white font-bold">AS</div>
+              <span className="font-bold">EcoScent</span>
             </div>
-            <p className="text-sm text-muted-foreground">
-              EcoScent: Keharuman Alami, Kelestarian Nyata.
-            </p>
+            <p className="text-sm text-muted-foreground">EcoScent: Keharuman Alami, Kelestarian Nyata.</p>
           </div>
 
           {/* Quick Links */}
@@ -109,5 +105,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }

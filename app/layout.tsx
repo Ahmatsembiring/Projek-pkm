@@ -10,10 +10,13 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "pkm",
-  description: "Professional creative studio specializing in design, branding, and digital solutions.",
-  generator: "ahmat-sembiring",
-}
+  title: 'EcoScent',
+  description: 'Professional creative studio specializing in design, branding, and digital solutions.',
+  generator: 'ahmat-sembiring',
+  icons: {
+    icon: "/logo.png",
+  },
+};
 
 export default function RootLayout({
   children,

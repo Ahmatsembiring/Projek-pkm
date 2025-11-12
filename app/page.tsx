@@ -1,67 +1,67 @@
-"use client"
+'use client';
 
-import Link from "next/link"
-import { ArrowRight, Sparkles } from "lucide-react"
-import ProjectCard from "@/components/project-card"
-import NewsCard from "@/components/news-card"
+import Link from 'next/link';
+import { ArrowRight, Sparkles } from 'lucide-react';
+import ProjectCard from '@/components/project-card';
+import NewsCard from '@/components/news-card';
 
 const featuredProjects = [
   {
     id: 1,
-    title: "Brand Identity System",
-    category: "Branding",
-    image: "/modern-brand-identity-with-colors-and-typography.jpg",
-    description: "Complete brand identity with logo, colors, and guidelines",
+    title: 'Brand Identity System',
+    category: 'Branding',
+    image: '/tumbuhan.jpg',
+    description: 'Complete brand identity with logo, colors, and guidelines',
   },
   {
     id: 2,
-    title: "Digital Product Design",
-    category: "UI/UX",
-    image: "/digital-product-interface.png",
-    description: "Comprehensive design system for digital products",
+    title: 'Digital Product Design',
+    category: 'UI/UX',
+    image: '/produk.jpg',
+    description: 'Comprehensive design system for digital products',
   },
   {
     id: 3,
-    title: "Marketing Campaign",
-    category: "Marketing",
-    image: "/creative-marketing-campaign-visual.jpg",
-    description: "Integrated marketing campaign across multiple channels",
+    title: 'Marketing Campaign',
+    category: 'Marketing',
+    image: '/creative-marketing-campaign-visual.jpg',
+    description: 'Integrated marketing campaign across multiple channels',
   },
   {
     id: 4,
-    title: "Website Redesign",
-    category: "Web Design",
-    image: "/modern-website-design-layout.jpg",
-    description: "Modern responsive website with interactive elements",
+    title: 'Website Redesign',
+    category: 'Web Design',
+    image: '/modern-website-design-layout.jpg',
+    description: 'Modern responsive website with interactive elements',
   },
-]
+];
 
 const recentNews = [
   {
     id: 1,
-    title: "Launching New Design Services",
-    date: "07 Nov 2025",
-    category: "Announcement",
+    title: 'Launching New Design Services',
+    date: '07 Nov 2025',
+    category: 'Announcement',
     views: 124,
-    image: "/new-design-services-announcement.jpg",
+    image: '/new-design-services-announcement.jpg',
   },
   {
     id: 2,
-    title: "Winning International Design Award",
-    date: "05 Nov 2025",
-    category: "Achievement",
+    title: 'Winning International Design Award',
+    date: '05 Nov 2025',
+    category: 'Achievement',
     views: 89,
-    image: "/design-award-trophy-achievement.jpg",
+    image: '/design-award-trophy-achievement.jpg',
   },
   {
     id: 3,
-    title: "Studio Expansion to New Office",
-    date: "02 Nov 2025",
-    category: "News",
+    title: 'Studio Expansion to New Office',
+    date: '02 Nov 2025',
+    category: 'News',
     views: 156,
-    image: "/modern-office-interior.png",
+    image: '/modern-office-interior.png',
   },
-]
+];
 
 export default function Home() {
   return (
@@ -75,20 +75,19 @@ export default function Home() {
         <div className="max-w-4xl mx-auto text-center space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-1000">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-card rounded-full border border-border hover:border-primary smooth-transition">
             <Sparkles size={16} className="text-primary animate-pulse" />
-            <span className="text-sm font-medium">Welcome to projek-ppkm</span>
+            <span className="text-sm font-medium">Welcome to projek-EcoScent</span>
           </div>
 
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight text-balance">
-            <span className="gradient-text">Creative Solutions</span>
-            <br />
-            for Your Brand
+          <h1 className="text-4xl sm:text-6xl lg:text-5xl font-extrabold leading-tight text-center">
+            <span className="block bg-gradient-to-r from-emerald-500 to-teal-500 bg-clip-text text-transparent">EcoScent</span>
+            <span className="block text-gray-800 dark:text-gray-100 mt-2">Sustainable Reed Diffuser</span>
           </h1>
 
-          <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto text-pretty">
-            Transform your vision into reality with our expert team of designers, strategists, and creators. We craft
-            experiences that inspire and engage.
-          </p>
+          <p className="mt-4 text-xl font-semibold text-center text-gray-900 dark:text-white">"Keharuman Alami, Kelestarian Nyata"</p>
 
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto text-pretty">
+            Reed Diffuser premium 100% bahan alami, memadukan keharuman terapi minyak nilam asli Lampung dan stik diffuser inovatif dari limbah rotan. Sehat untuk Anda, lestari untuk Bumi.
+          </p>
 
           <div className="grid grid-cols-3 gap-4 pt-12 max-w-md mx-auto text-sm">
             <div>
@@ -120,7 +119,6 @@ export default function Home() {
               <ProjectCard key={project.id} project={project} />
             ))}
           </div>
-
         </div>
       </section>
 
@@ -145,15 +143,12 @@ export default function Home() {
         <div className="max-w-4xl mx-auto text-center text-white space-y-6">
           <h2 className="text-4xl font-bold">Ready to Start Your Project?</h2>
           <p className="text-lg opacity-90">Let's collaborate and create something amazing together</p>
-          <Link
-            href="/kontak"
-            className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-white text-emerald-600 hover:bg-emerald-50 rounded-lg smooth-transition font-medium shadow-lg"
-          >
+          <Link href="/kontak" className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-white text-emerald-600 hover:bg-emerald-50 rounded-lg smooth-transition font-medium shadow-lg">
             Contact Us Today
             <ArrowRight size={18} />
           </Link>
         </div>
       </section>
     </div>
-  )
+  );
 }

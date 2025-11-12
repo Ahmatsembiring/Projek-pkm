@@ -35,9 +35,9 @@ export default function Header() {
         <div className="flex justify-between items-center h-16">
           <Link href="/" className="flex items-center gap-2 group">
             <div className="w-10 h-10 bg-gradient-to-br from-emerald-500 to-teal-500 rounded-lg flex items-center justify-center text-white font-bold group-hover:scale-110 smooth-transition">
-              pkm
+              <img src="/logo.png" alt="Logo PKM" className="w-6 h-6" />
             </div>
-            <span className="font-bold text-lg hidden sm:inline">projek-pkm</span>
+            <span className="font-bold text-lg hidden sm:inline">EcoScent</span>
           </Link>
 
           {/* Desktop Menu */}
@@ -50,11 +50,7 @@ export default function Header() {
                 {item.submenu && (
                   <div className="absolute left-0 mt-0 w-48 glass rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible smooth-transition py-2">
                     {item.submenu.map((subitem) => (
-                      <Link
-                        key={subitem.label}
-                        href={subitem.href}
-                        className="block px-4 py-2 text-sm hover:text-primary smooth-transition"
-                      >
+                      <Link key={subitem.label} href={subitem.href} className="block px-4 py-2 text-sm hover:text-primary smooth-transition">
                         {subitem.label}
                       </Link>
                     ))}
@@ -68,7 +64,7 @@ export default function Header() {
           <div className="flex items-center gap-2">
             {mounted && (
               <button onClick={toggleTheme} className="p-2 hover:bg-card rounded-lg smooth-transition">
-                {theme === "dark" ? <Sun size={20} /> : <Moon size={20} />}
+                {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
               </button>
             )}
 
@@ -90,11 +86,7 @@ export default function Header() {
                 {item.submenu && (
                   <div className="ml-4 space-y-1">
                     {item.submenu.map((subitem) => (
-                      <Link
-                        key={subitem.label}
-                        href={subitem.href}
-                        className="block px-3 py-2 text-sm hover:bg-card rounded-lg smooth-transition"
-                      >
+                      <Link key={subitem.label} href={subitem.href} className="block px-3 py-2 text-sm hover:bg-card rounded-lg smooth-transition">
                         {subitem.label}
                       </Link>
                     ))}
@@ -106,5 +98,5 @@ export default function Header() {
         )}
       </nav>
     </header>
-  )
+  );
 }

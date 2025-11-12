@@ -8,8 +8,8 @@ import { useState } from 'react';
 // PENTING: Ganti dengan nomor WhatsApp AKTIF Anda!
 // Format: 62 + nomor tanpa 0 di depan
 // Contoh: 628123456789 (untuk nomor 08123456789)
-const WHATSAPP_NUMBER = '628815831898'; // ⬅️ GANTI DENGAN NOMOR ANDA!
-const PRE_FILLED_MESSAGE = 'Halo, saya tertarik dengan layanan Ahmat Studio. Bisakah kita berdiskusi lebih lanjut tentang proyek saya?';
+const WHATSAPP_NUMBER = '6285840663868'; // ⬅️ GANTI DENGAN NOMOR ANDA!
+const PRE_FILLED_MESSAGE = 'Halo, saya tertarik dengan layanan EcoScent. Bisakah kita berdiskusi lebih lanjut?';
 const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(PRE_FILLED_MESSAGE)}`;
 
 // Ikon WhatsApp yang lebih bagus
