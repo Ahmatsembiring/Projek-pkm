@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { ArrowRight, Sparkles } from 'lucide-react';
 import ProjectCard from '@/components/project-card';
 import NewsCard from '@/components/news-card';
+import { reducer } from './../hooks/use-toast';
 
 const featuredProjects = [
   {
@@ -67,40 +68,42 @@ export default function Home() {
   return (
     <div className="w-full">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 py-20 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-emerald-50 via-white to-teal-50 dark:from-emerald-950/20 dark:via-background dark:to-teal-950/20 -z-10" />
-        <div className="absolute top-0 right-0 w-96 h-96 bg-emerald-100 dark:bg-emerald-900/20 rounded-full blur-3xl opacity-20 -z-10" />
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-teal-100 dark:bg-teal-900/20 rounded-full blur-3xl opacity-20 -z-10" />
+      <section
+        className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 py-20 overflow-hidden bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: "url('/bg.png')" }} // taruh gambar di /public/bg-hero.jpg
+      >
+        {/* overlay gradasi tipis biar teks kontras */}
+        <div className="absolute inset-0 bg-gradient-to-b from-emerald-900/20 via-white/70 to-white dark:from-black/30 dark:via-black/40 dark:to-background -z-10" />
 
         <div className="max-w-4xl mx-auto text-center space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-1000">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-card rounded-full border border-border hover:border-primary smooth-transition">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/70 dark:bg-black/40 rounded-full border border-white/50 dark:border-white/10 backdrop-blur">
             <Sparkles size={16} className="text-primary animate-pulse" />
             <span className="text-sm font-medium">Welcome to projek-EcoScent</span>
           </div>
 
-          <h1 className="text-4xl sm:text-6xl lg:text-5xl font-extrabold leading-tight text-center">
-            <span className="block bg-gradient-to-r from-emerald-500 to-teal-500 bg-clip-text text-transparent">EcoScent</span>
-            <span className="block text-gray-800 dark:text-gray-100 mt-2">Sustainable Reed Diffuser</span>
+          <h1 className="text-4xl sm:text-6xl lg:text-5xl font-extrabold leading-tight text-center text-blue">
+            <span className="block text-emerald-200">EcoScent</span>
+            <span className="block text-white mt-2">Sustainable Reed Diffuser</span>
           </h1>
 
-          <p className="mt-4 text-xl font-semibold text-center text-gray-900 dark:text-white">"Keharuman Alami, Kelestarian Nyata"</p>
+          <p className="mt-4 text-xl font-semibold text-emerald-50">"Keharuman Alami, Kelestarian Nyata"</p>
 
-          <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto text-pretty">
+          <p className="text-lg sm:text-xl text-gray-100 max-w-2xl mx-auto">
             Reed Diffuser premium 100% bahan alami, memadukan keharuman terapi minyak nilam asli Lampung dan stik diffuser inovatif dari limbah rotan. Sehat untuk Anda, lestari untuk Bumi.
           </p>
 
           <div className="grid grid-cols-3 gap-4 pt-12 max-w-md mx-auto text-sm">
             <div>
               <p className="font-bold text-2xl text-primary">150+</p>
-              <p className="text-muted-foreground text-xs">Projects Done</p>
+              <p className="text-gray-700 dark:text-gray-300 text-xs">Projects Done</p>
             </div>
             <div>
               <p className="font-bold text-2xl text-primary">50+</p>
-              <p className="text-muted-foreground text-xs">Happy Clients</p>
+              <p className="text-gray-700 dark:text-gray-300 text-xs">Happy Clients</p>
             </div>
             <div>
               <p className="font-bold text-2xl text-primary">12</p>
-              <p className="text-muted-foreground text-xs">Awards Won</p>
+              <p className="text-gray-700 dark:text-gray-300 text-xs">Awards Won</p>
             </div>
           </div>
         </div>
