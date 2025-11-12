@@ -12,10 +12,10 @@ export default function Footer() {
               <div className="w-10 h-10 bg-gradient-to-br from-emerald-500 to-teal-500 rounded-lg flex items-center justify-center text-white font-bold">
                 AS
               </div>
-              <span className="font-bold">ahmat-studio</span>
+              <span className="font-bold">projek-pkm</span>
             </div>
             <p className="text-sm text-muted-foreground">
-              Creative studio untuk solusi desain dan branding profesional.
+              EcoScent: Keharuman Alami, Kelestarian Nyata.
             </p>
           </div>
 
@@ -26,11 +26,6 @@ export default function Footer() {
               <li>
                 <Link href="/" className="hover:text-primary smooth-transition">
                   Beranda
-                </Link>
-              </li>
-              <li>
-                <Link href="/portfolio" className="hover:text-primary smooth-transition">
-                  Portfolio
                 </Link>
               </li>
               <li>
@@ -99,7 +94,7 @@ export default function Footer() {
 
         {/* Social & Copyright */}
         <div className="border-t border-border pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
-          <p className="text-sm text-muted-foreground">© 2025 ahmat-studio. All rights reserved.</p>
+          <p className="text-sm text-muted-foreground">© 2025 projek-pkkm. All rights reserved.</p>
           <div className="flex gap-4">
             <a href="#" className="hover:text-primary smooth-transition">
               <Linkedin size={20} />

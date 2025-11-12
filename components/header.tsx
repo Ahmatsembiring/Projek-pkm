@@ -25,7 +25,6 @@ export default function Header() {
         { label: "Organisasi", href: "/profil/organisasi" },
       ],
     },
-    { label: "Portfolio", href: "/portfolio" },
     { label: "Galeri", href: "/galeri" },
     { label: "Kontak", href: "/kontak" },
   ]
@@ -36,9 +35,9 @@ export default function Header() {
         <div className="flex justify-between items-center h-16">
           <Link href="/" className="flex items-center gap-2 group">
             <div className="w-10 h-10 bg-gradient-to-br from-emerald-500 to-teal-500 rounded-lg flex items-center justify-center text-white font-bold group-hover:scale-110 smooth-transition">
-              AS
+              pkm
             </div>
-            <span className="font-bold text-lg hidden sm:inline">ahmat-studio</span>
+            <span className="font-bold text-lg hidden sm:inline">projek-pkm</span>
           </Link>
 
           {/* Desktop Menu */}

@@ -89,21 +89,6 @@ export default function Home() {
             experiences that inspire and engage.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
-            <Link
-              href="/portfolio"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 smooth-transition font-medium shadow-lg hover:shadow-xl"
-            >
-              View Portfolio
-              <ArrowRight size={18} />
-            </Link>
-            <Link
-              href="/kontak"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-border rounded-lg hover:bg-card smooth-transition font-medium"
-            >
-              Get In Touch
-            </Link>
-          </div>
 
           <div className="grid grid-cols-3 gap-4 pt-12 max-w-md mx-auto text-sm">
             <div>
@@ -136,15 +121,6 @@ export default function Home() {
             ))}
           </div>
 
-          <div className="text-center">
-            <Link
-              href="/portfolio"
-              className="inline-flex items-center gap-2 text-primary hover:gap-3 smooth-transition font-medium group"
-            >
-              View All Projects
-              <ArrowRight size={18} className="group-hover:translate-x-1 smooth-transition" />
-            </Link>
-          </div>
         </div>
       </section>
 
@@ -160,16 +136,6 @@ export default function Home() {
             {recentNews.map((news) => (
               <NewsCard key={news.id} news={news} />
             ))}
-          </div>
-
-          <div className="text-center">
-            <Link
-              href="/berita"
-              className="inline-flex items-center gap-2 text-primary hover:gap-3 smooth-transition font-medium group"
-            >
-              Read All News
-              <ArrowRight size={18} className="group-hover:translate-x-1 smooth-transition" />
-            </Link>
           </div>
         </div>
       </section>
