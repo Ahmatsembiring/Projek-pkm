@@ -95,7 +95,7 @@ export default function KontakPage() {
   ];
 
   return (
-    <div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen mt-24 py-12 px-4 sm:px-6 lg:px-8">
       {/* Header Section */}
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 space-y-4">

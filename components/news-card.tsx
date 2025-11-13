@@ -12,7 +12,7 @@ interface News {
 
 export default function NewsCard({ news }: { news: News }) {
   return (
-    <Link href={`/berita/${news.id}`}>
+    <Link href={`/profil/${news.id}`}>
       <div className="group bg-card rounded-lg overflow-hidden border border-border hover:border-primary smooth-transition h-full cursor-pointer">
         <div className="relative h-48 overflow-hidden bg-background">
           <img

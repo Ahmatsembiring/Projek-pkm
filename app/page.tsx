@@ -78,32 +78,32 @@ export default function Home() {
         <div className="max-w-4xl mx-auto text-center space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-1000">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/70 dark:bg-black/40 rounded-full border border-white/50 dark:border-white/10 backdrop-blur">
             <Sparkles size={16} className="text-primary animate-pulse" />
-            <span className="text-sm font-medium">Welcome to projek-EcoScent</span>
+            <span className="text-sm font-medium">Welcome to EcoScent</span>
           </div>
 
-          <h1 className="text-4xl sm:text-6xl lg:text-5xl font-extrabold leading-tight text-center text-blue">
+          <h1 className="text-4xl sm:text-6xl lg:text-5xl font-poppins  font-bold leading-tight text-center text-blue">
             <span className="block text-emerald-200">EcoScent</span>
-            <span className="block text-white mt-2">Sustainable Reed Diffuser</span>
+            <span className="block text-white mt-2 ">Sustainable Reed Diffuser</span>
           </h1>
 
-          <p className="mt-4 text-xl font-semibold text-emerald-50">"Keharuman Alami, Kelestarian Nyata"</p>
+          <p className="mt-4 text-lg font-semibold text-emerald-50 font-poppins">"Keharuman Alami, Kelestarian Nyata"</p>
 
-          <p className="text-lg sm:text-xl text-gray-100 max-w-2xl mx-auto">
+          <p className="font-poppins text-lg sm:text-xl text-gray-100 max-w-2xl mx-auto">
             Reed Diffuser premium 100% bahan alami, memadukan keharuman terapi minyak nilam asli Lampung dan stik diffuser inovatif dari limbah rotan. Sehat untuk Anda, lestari untuk Bumi.
           </p>
 
           <div className="grid grid-cols-3 gap-4 pt-12 max-w-md mx-auto text-sm">
             <div>
-              <p className="font-bold text-2xl text-primary">150+</p>
-              <p className="text-gray-700 dark:text-gray-300 text-xs">Projects Done</p>
+              <p className="font-bold text-3xl text-white">15+</p>
+              <p className="text-white text-xs">Produk Terjual</p>
             </div>
             <div>
-              <p className="font-bold text-2xl text-primary">50+</p>
-              <p className="text-gray-700 dark:text-gray-300 text-xs">Happy Clients</p>
+              <p className="font-bold text-3xl text-white">10+</p>
+              <p className="text-white text-xs">Happy Clients</p>
             </div>
             <div>
-              <p className="font-bold text-2xl text-primary">12</p>
-              <p className="text-gray-700 dark:text-gray-300 text-xs">Awards Won</p>
+              <p className="font-bold text-3xl text-white">5</p>
+              <p className="text-white text-xs">Awards Won</p>
             </div>
           </div>
         </div>

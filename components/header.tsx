@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { Menu, X, Moon, Sun } from 'lucide-react';
 import { useTheme } from '@/hooks/use-theme';
 
@@ -10,6 +11,7 @@ export default function Header() {
   const [mounted, setMounted] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const { theme, toggleTheme } = useTheme();
+  const pathname = usePathname();
 
   useEffect(() => {
     setMounted(true);
@@ -33,7 +35,12 @@ export default function Header() {
     { label: 'Kontak', href: '/kontak' },
   ];
 
-  const headerBg = scrolled ? 'bg-emerald-600/95 dark:bg-emerald-800/95 backdrop-blur-md border-b border-emerald-700 shadow-md' : 'bg-transparent';
+  // Cek apakah di halaman beranda
+  const isHomePage = pathname === '/';
+
+  // Di homepage: transparan lalu berubah saat scroll
+  // Di halaman lain: langsung hijau dari awal
+  const headerBg = isHomePage ? (scrolled ? 'bg-emerald-600/95 dark:bg-emerald-800/95 backdrop-blur-md border-b border-emerald-700 shadow-md' : 'bg-transparent') : 'bg-emerald-600 dark:bg-emerald-800 border-b border-emerald-700 shadow-md';
 
   return (
     <header className={`fixed top-0 w-full z-50 transition-all duration-500 ease-in-out ${headerBg}`}>
@@ -43,14 +50,14 @@ export default function Header() {
             <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center shadow-md group-hover:scale-110 transition-transform duration-300">
               <img src="/logo.png" alt="Logo EcoScent" className="w-6 h-6" />
             </div>
-            <span className={`font-bold text-lg hidden sm:inline transition-colors duration-500 ${scrolled ? 'text-white' : 'text-white drop-shadow-lg'}`}>EcoScent</span>
+            <span className="font-bold text-lg hidden sm:inline text-white transition-colors duration-500">EcoScent</span>
           </Link>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-4">
             {menuItems.map((item) => (
               <div key={item.label} className="relative group">
-                <Link href={item.href} className={`px-3 py-2 text-sm font-medium transition-colors duration-300 ${scrolled ? 'text-white hover:text-emerald-100' : 'text-white drop-shadow-md'}`}>
+                <Link href={item.href} className="px-3 py-2 text-sm font-medium text-white hover:text-emerald-100 transition-colors duration-300">
                   {item.label}
                 </Link>
                 {item.submenu && (
@@ -69,13 +76,13 @@ export default function Header() {
           {/* Right Side Actions */}
           <div className="flex items-center gap-2">
             {mounted && (
-              <button onClick={toggleTheme} className={`p-2 rounded-lg transition-colors duration-300 ${scrolled ? 'text-white hover:bg-white/10' : 'text-white drop-shadow-md'}`}>
+              <button onClick={toggleTheme} className="p-2 rounded-lg text-white hover:bg-white/10 transition-colors duration-300">
                 {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
               </button>
             )}
 
             {/* Mobile Button */}
-            <button onClick={() => setIsOpen(!isOpen)} className={`md:hidden p-2 ${scrolled ? 'text-white' : 'text-white drop-shadow-md'}`}>
+            <button onClick={() => setIsOpen(!isOpen)} className="md:hidden p-2 text-white">
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
