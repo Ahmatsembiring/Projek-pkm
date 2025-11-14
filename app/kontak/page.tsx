@@ -99,12 +99,8 @@ export default function KontakPage() {
       {/* Header Section */}
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 space-y-4">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full text-primary text-sm font-medium mb-4">
-            <MessageCircle className="w-4 h-4" />
-            Mari Berkolaborasi
-          </div>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-primary via-purple-500 to-pink-500 bg-clip-text text-transparent">Hubungi Kami</h1>
-          <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">Punya ide proyek atau pertanyaan? Tim kami siap membantu mewujudkan visi digital Anda</p>
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-emerald-500 via-green-500 to-lime-400 bg-clip-text text-transparent">Hubungi Kami</h1>
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">Punya pertanyaan tentang aroma atau produk EcoScent? Tim kami siap membantu Anda menemukan keharuman alami yang tepat.</p>
         </div>
 
         {/* Contact Methods Grid */}
@@ -161,7 +157,6 @@ export default function KontakPage() {
               >
                 <WhatsAppIcon className="w-6 h-6 group-hover:rotate-12 transition-transform duration-300" />
                 Chat via WhatsApp
-                <span className="text-xs bg-white/20 px-2 py-1 rounded-full">Respon &lt; 5 Menit</span>
               </a>
               <a href="mailto:hello@ahmat-studio.com" className="inline-flex items-center gap-2 px-8 py-4 bg-card border border-border rounded-xl text-lg font-semibold hover:bg-accent hover:shadow-lg transition-all duration-300">
                 <Mail className="w-5 h-5" />
@@ -170,7 +165,6 @@ export default function KontakPage() {
             </div>
           </div>
         </div>
-
         {/* Office Info */}
         <div className="grid sm:grid-cols-2 gap-6">
           {officeInfo.map((info, index) => (
@@ -186,17 +180,6 @@ export default function KontakPage() {
           ))}
         </div>
 
-        {/* Social Proof */}
-        <div className="mt-16 text-center">
-          <p className="text-sm text-muted-foreground mb-4">Dipercaya oleh 100+ klien dari berbagai industri</p>
-          <div className="flex justify-center items-center gap-8 flex-wrap opacity-50">
-            <div className="text-2xl font-bold">⭐ 4.9/5.0</div>
-            <div className="h-8 w-px bg-border" />
-            <div className="text-sm">100+ Proyek Selesai</div>
-            <div className="h-8 w-px bg-border" />
-            <div className="text-sm">Respon &lt; 5 Menit</div>
-          </div>
-        </div>
       </div>
     </div>
   );

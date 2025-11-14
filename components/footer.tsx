@@ -9,9 +9,14 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center text-emerald-600 font-bold">ES</div>
-              <span className="font-bold text-white">EcoScent</span>
-            </div>
+            <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
+  <img 
+    className="w-10 h-10 object-contain" 
+    src="/logo.png" 
+    alt="EcoScent Logo"
+  />
+</div>
+</div>
             <p className="text-sm text-emerald-100">EcoScent: Keharuman Alami, Kelestarian Nyata.</p>
           </div>
 

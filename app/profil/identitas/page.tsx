@@ -24,7 +24,6 @@ export default function IdentitasPage() {
             </div>
           </div>
         </div>
-
         {/* Color Palette */}
         {/* Foto Berjalan */}
         <div className="mb-16 overflow-hidden">
@@ -35,19 +34,16 @@ export default function IdentitasPage() {
               {/* Foto 1 */}
               <img src="/jadi.jpg" className="w-60 h-40 object-cover rounded-xl" />
               {/* Foto 2 */}
-              <img src="/jadi-produk.jpg" className="w-60 h-40 object-cover rounded-xl" />
-              {/* Foto 3 */}
               <img src="/tumbuhan.jpg" className="w-60 h-40 object-cover rounded-xl" />
-              {/* Foto 4 */}
+              {/* Foto 3 */}
               <img src="/produksi.jpg" className="w-60 h-40 object-cover rounded-xl" />
-              {/* Foto 5 */}
+              {/* Foto 4 */}
               <img src="/bahan-baku.jpg" className="w-60 h-40 object-cover rounded-xl" />
-              {/* Foto 6 */}
+              {/* Foto 5 */}
               <img src="/Pengolahan.png" className="w-60 h-40 object-cover rounded-xl" />
 
               {/* Duplikasi untuk looping */}
               <img src="/jadi.jpg" className="w-60 h-40 object-cover rounded-xl" />
-              <img src="/jadi-produk.jpg" className="w-60 h-40 object-cover rounded-xl" />
               <img src="/tumbuhan.jpg" className="w-60 h-40 object-cover rounded-xl" />
               <img src="/produksi.jpg" className="w-60 h-40 object-cover rounded-xl" />
               <img src="/bahan-Background.jpg" className="w-60 h-40 object-cover rounded-xl" />

@@ -25,14 +25,14 @@ const featuredProjects = [
     id: 3,
     title: 'Marketing Campaign',
     category: 'Marketing',
-    image: '/creative-marketing-campaign-visual.jpg',
+    image: '/bahan-1.jpg',
     description: 'Integrated marketing campaign across multiple channels',
   },
   {
     id: 4,
     title: 'Website Redesign',
     category: 'Web Design',
-    image: '/modern-website-design-layout.jpg',
+    image: '/packing.jpg',
     description: 'Modern responsive website with interactive elements',
   },
 ];
@@ -44,7 +44,7 @@ const recentNews = [
     date: '07 Nov 2025',
     category: 'Announcement',
     views: 124,
-    image: '/new-design-services-announcement.jpg',
+    image: '/akmal.jpg',
   },
   {
     id: 2,
@@ -52,7 +52,7 @@ const recentNews = [
     date: '05 Nov 2025',
     category: 'Achievement',
     views: 89,
-    image: '/design-award-trophy-achievement.jpg',
+    image: '/bersama.jpg',
   },
   {
     id: 3,
@@ -60,7 +60,7 @@ const recentNews = [
     date: '02 Nov 2025',
     category: 'News',
     views: 156,
-    image: '/modern-office-interior.png',
+    image: '/bahan.jpg',
   },
 ];
 
@@ -70,7 +70,7 @@ export default function Home() {
       {/* Hero Section */}
       <section
         className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 py-20 overflow-hidden bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/bg.png')" }} // taruh gambar di /public/bg-hero.jpg
+        style={{ backgroundImage: "url('/bg.png')" }} // taruh gambar di /public/bg.jpg
       >
         {/* overlay gradasi tipis biar teks kontras */}
         <div className="absolute inset-0 bg-gradient-to-b from-emerald-900/20 via-white/70 to-white dark:from-black/30 dark:via-black/40 dark:to-background -z-10" />
@@ -110,11 +110,11 @@ export default function Home() {
       </section>
 
       {/* Featured Projects */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-card">
+      <section className="pt-15 px-4 sm:px-6 lg:px-8 bg-card">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Featured Projects</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">Showcase of our latest and greatest work</p>
+            <h2 className="text-4xl font-bold mb-4">Karya Terbaik yang Kami Hadirkan</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">Produk pilihan EcoScent yang dirancang untuk memberikan pengalaman aroma terbaik</p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 mb-12">
@@ -126,13 +126,11 @@ export default function Home() {
       </section>
 
       {/* Recent News */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8">
+      <section className="pt-20 pb-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-8">
             <h2 className="text-4xl font-bold mb-4">Recent News</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">Latest updates and announcements</p>
           </div>
-
           <div className="grid md:grid-cols-3 gap-6 mb-12">
             {recentNews.map((news) => (
               <NewsCard key={news.id} news={news} />
@@ -144,8 +142,8 @@ export default function Home() {
       {/* CTA Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-emerald-500 to-teal-500 dark:from-emerald-600 dark:to-teal-600">
         <div className="max-w-4xl mx-auto text-center text-white space-y-6">
-          <h2 className="text-4xl font-bold">Ready to Start Your Project?</h2>
-          <p className="text-lg opacity-90">Let's collaborate and create something amazing together</p>
+          <h2 className="text-4xl font-bold">"Saatnya Wujudkan Ruangan yang Harum Alami & Ramah Lingkungan"</h2>
+          <p className="text-lg opacity-90">Soft, elegan, menenangkan.</p>
           <Link href="/kontak" className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-white text-emerald-600 hover:bg-emerald-50 rounded-lg smooth-transition font-medium shadow-lg">
             Contact Us Today
             <ArrowRight size={18} />

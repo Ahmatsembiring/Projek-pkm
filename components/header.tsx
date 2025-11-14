@@ -28,7 +28,7 @@ export default function Header() {
       submenu: [
         { label: 'Tim Kami', href: '/profil/tim' },
         { label: 'Identitas', href: '/profil/identitas' },
-        { label: 'Organisasi', href: '/profil/organisasi' },
+        { label: 'Legalitas', href: '/profil/legalitas' },
       ],
     },
     { label: 'Galeri', href: '/galeri' },

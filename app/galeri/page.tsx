@@ -4,8 +4,8 @@ import { useState } from "react"
 import { X } from "lucide-react"
 
 const galleryItems = [
-  { id: 1, type: "image", src: "/placeholder.svg?height=500&width=500" },
-  { id: 2, type: "image", src: "/placeholder.svg?height=500&width=500" },
+  { id: 1, type: "image", src: "/logo.png?height=500&width=500" },
+  { id: 2, type: "image", src: "/bahan-1.jpg?height=500&width=500" },
   { id: 3, type: "image", src: "/placeholder.svg?height=500&width=500" },
   { id: 4, type: "image", src: "/placeholder.svg?height=500&width=500" },
   { id: 5, type: "image", src: "/placeholder.svg?height=500&width=500" },

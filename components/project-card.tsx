@@ -11,7 +11,6 @@ interface Project {
 
 export default function ProjectCard({ project }: { project: Project }) {
   return (
-    <Link href={`/portfolio/${project.id}`}>
       <div className="group bg-background rounded-lg overflow-hidden border border-border hover:border-primary smooth-transition h-full cursor-pointer">
         <div className="relative h-60 overflow-hidden bg-card">
           <img
@@ -34,6 +33,5 @@ export default function ProjectCard({ project }: { project: Project }) {
           <p className="text-sm text-muted-foreground">{project.description}</p>
         </div>
       </div>
-    </Link>
   )
 }

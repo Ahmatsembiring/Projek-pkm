@@ -3,24 +3,24 @@ import { Linkedin, Twitter, Mail } from "lucide-react"
 const teamMembers = [
   {
     id: 1,
-    name: "Ahmad Suryana",
+    name: "Rihan Rifki",
     role: "Creative Director",
     bio: "Visioner kreatif dengan pengalaman 10+ tahun di industri design",
-    image: "/creative-director-portrait.png",
+    image: "/Rihan.png",
   },
   {
     id: 2,
-    name: "Siti Nurhaliza",
+    name: "Maeda Wahyuningrum,S.Hut.,M.Si",
     role: "Lead Designer",
     bio: "Desainer berbakat dengan fokus pada UI/UX dan branding",
-    image: "/professional-designer-portrait-woman.jpg",
+    image: "/Dosen.png",
   },
   {
     id: 3,
-    name: "Budi Santoso",
+    name: "Akmal Fauzan Sutisna",
     role: "Lead Developer",
     bio: "Developer fullstack dengan expertise dalam web modern",
-    image: "/professional-developer-portrait-man.jpg",
+    image: "/akmal.png",
   },
   {
     id: 4,

@@ -12,7 +12,6 @@ interface News {
 
 export default function NewsCard({ news }: { news: News }) {
   return (
-    <Link href={`/profil/${news.id}`}>
       <div className="group bg-card rounded-lg overflow-hidden border border-border hover:border-primary smooth-transition h-full cursor-pointer">
         <div className="relative h-48 overflow-hidden bg-background">
           <img
@@ -35,6 +34,5 @@ export default function NewsCard({ news }: { news: News }) {
           <p className="text-xs text-muted-foreground">{news.date}</p>
         </div>
       </div>
-    </Link>
   )
 }
