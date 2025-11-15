@@ -38,7 +38,7 @@ const teamMembers = [
     name: 'Akmal Fauzan Sutisna',
     role: 'Logistik',
     bio: 'Penanggung jawab logistik EcoScent yang memastikan proses pengadaan bahan baku, penyimpanan, dan distribusi berjalan lancar, tepat waktu, dan efisien',
-    image: '/Akmal.png',
+    image: '/akmal.png',
     instagram: 'https://www.instagram.com/_akmal.fs/', // Ganti dengan username Instagram
   },
   {
