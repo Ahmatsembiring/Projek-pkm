@@ -9,14 +9,10 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-            <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
-  <img 
-    className="w-10 h-10 object-contain" 
-    src="/logo.png" 
-    alt="EcoScent Logo"
-  />
-</div>
-</div>
+              <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
+                <img className="w-10 h-10 object-contain" src="/logo.png" alt="EcoScent Logo" />
+              </div>
+            </div>
             <p className="text-sm text-emerald-100">EcoScent: Keharuman Alami, Kelestarian Nyata.</p>
           </div>
 
@@ -35,7 +31,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/galeri" className="text-emerald-100 hover:text-white smooth-transition">
+                <Link href="/" className="text-emerald-100 hover:text-white smooth-transition">
                   Galeri
                 </Link>
               </li>

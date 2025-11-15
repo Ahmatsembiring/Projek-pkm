@@ -9,55 +9,59 @@ import { reducer } from './../hooks/use-toast';
 const featuredProjects = [
   {
     id: 1,
-    title: 'Brand Identity System',
-    category: 'Branding',
+    title: 'Aktivitas Farmakologis Minyak Nilam',
+    category: 'Artikel',
     image: '/tumbuhan.jpg',
-    description: 'Complete brand identity with logo, colors, and guidelines',
+    description: 'Pembahasan tentang manfaat farmakologis minyak nilam dalam bidang kesehatan dan aromaterapi.',
+    link: 'https://doi.org/10.1155/2017/4850612',
   },
   {
     id: 2,
-    title: 'Digital Product Design',
-    category: 'UI/UX',
-    image: '/produk.jpg',
-    description: 'Comprehensive design system for digital products',
+    title: 'Pengenalan & Karakteristik Minyak Nilam',
+    category: 'Jurnal',
+    image: '/nilam.jpg',
+    description: 'Kajian mengenai sifat, kualitas, dan karakteristik utama minyak nilam dari berbagai perspektif ilmiah.',
+    link: 'https://doi.org/10.30811/jstr.v22i02.6363',
   },
   {
     id: 3,
-    title: 'Marketing Campaign',
-    category: 'Marketing',
-    image: '/bahan-1.jpg',
-    description: 'Integrated marketing campaign across multiple channels',
+    title: 'Inovasi Aromaterapi Minyak Nilam',
+    category: 'Prosiding',
+    image: '/nilam1.jpg',
+    description: 'Penelitian pengembangan aromaterapi berbasis minyak nilam dengan pendekatan modern dan aplikatif.',
+    link: 'https://proceedings.ums.ac.id/rapi/article/view/5171?utm_source=chatgpt.com',
   },
   {
     id: 4,
-    title: 'Website Redesign',
-    category: 'Web Design',
-    image: '/packing.jpg',
-    description: 'Modern responsive website with interactive elements',
+    title: 'Inovasi Rotan Sebagai Reed Stick',
+    category: 'Jurnal',
+    image: '/rotan.jpeg',
+    description: 'Studi pemanfaatan rotan sebagai reed stick ramah lingkungan untuk penyebaran aroma alami.',
+    link: 'https://doi.org/10.53730/ijhs.v6nS4.5520',
   },
 ];
 
 const recentNews = [
   {
     id: 1,
-    title: 'Launching New Design Services',
-    date: '07 Nov 2025',
+    title: '🌿 Panen Daun Nilam untuk Produksi EcoScent',
+    date: '15 Nov 2025',
     category: 'Announcement',
     views: 124,
     image: '/akmal.jpg',
   },
   {
     id: 2,
-    title: 'Winning International Design Award',
-    date: '05 Nov 2025',
+    title: 'Kunjungan Lapangan: Meninjau Kualitas Tanaman Nilam',
+    date: '16 Nov 2025',
     category: 'Achievement',
     views: 89,
     image: '/bersama.jpg',
   },
   {
     id: 3,
-    title: 'Studio Expansion to New Office',
-    date: '02 Nov 2025',
+    title: 'Penyulingan Minyak Nilam: Tahap Awal Aroma EcoScent',
+    date: '17 Nov 2025',
     category: 'News',
     views: 156,
     image: '/bahan.jpg',
@@ -82,7 +86,7 @@ export default function Home() {
           </div>
 
           <h1 className="text-4xl sm:text-6xl lg:text-5xl font-poppins  font-bold leading-tight text-center text-blue">
-            <span className="block text-emerald-200">EcoScent</span>
+            <span className="block text-lime-400">EcoScent</span>
             <span className="block text-white mt-2 ">Sustainable Reed Diffuser</span>
           </h1>
 
@@ -98,11 +102,11 @@ export default function Home() {
               <p className="text-white text-xs">Produk Terjual</p>
             </div>
             <div>
-              <p className="font-bold text-3xl text-white">10+</p>
+              <p className="font-bold text-3xl text-white">15+</p>
               <p className="text-white text-xs">Happy Clients</p>
             </div>
             <div>
-              <p className="font-bold text-3xl text-white">5</p>
+              <p className="font-bold text-3xl text-white">2</p>
               <p className="text-white text-xs">Awards Won</p>
             </div>
           </div>
