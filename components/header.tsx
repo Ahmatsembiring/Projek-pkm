@@ -3,18 +3,14 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Menu, X, Moon, Sun } from 'lucide-react';
-import { useTheme } from '@/hooks/use-theme';
+import { Menu, X } from 'lucide-react';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
-  const [mounted, setMounted] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const { theme, toggleTheme } = useTheme();
   const pathname = usePathname();
 
   useEffect(() => {
-    setMounted(true);
     const handleScroll = () => setScrolled(window.scrollY > 30);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
@@ -40,12 +36,13 @@ export default function Header() {
 
   // Di homepage: transparan lalu berubah saat scroll
   // Di halaman lain: langsung hijau dari awal
-  const headerBg = isHomePage ? (scrolled ? 'bg-emerald-600/95 dark:bg-emerald-800/95 backdrop-blur-md border-b border-emerald-700 shadow-md' : 'bg-transparent') : 'bg-emerald-600 dark:bg-emerald-800 border-b border-emerald-700 shadow-md';
+  const headerBg = isHomePage ? (scrolled ? 'bg-emerald-600/95 backdrop-blur-md border-b border-emerald-700 shadow-md' : 'bg-transparent') : 'bg-emerald-600 border-b border-emerald-700 shadow-md';
 
   return (
     <header className={`fixed top-0 w-full z-50 transition-all duration-500 ease-in-out ${headerBg}`}>
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
+          {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
             <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center shadow-md group-hover:scale-110 transition-transform duration-300">
               <img src="/logo.png" alt="Logo EcoScent" className="w-6 h-6" />
@@ -61,9 +58,9 @@ export default function Header() {
                   {item.label}
                 </Link>
                 {item.submenu && (
-                  <div className="absolute left-0 mt-0 w-48 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 py-2 bg-white dark:bg-neutral-900">
+                  <div className="absolute left-0 mt-0 w-48 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 py-2 bg-white">
                     {item.submenu.map((subitem) => (
-                      <Link key={subitem.label} href={subitem.href} className="block px-4 py-2 text-sm text-neutral-700 dark:text-neutral-200 hover:bg-neutral-100 dark:hover:bg-neutral-800">
+                      <Link key={subitem.label} href={subitem.href} className="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-100">
                         {subitem.label}
                       </Link>
                     ))}
@@ -73,15 +70,8 @@ export default function Header() {
             ))}
           </div>
 
-          {/* Right Side Actions */}
+          {/* Right Side: hanya tombol menu mobile */}
           <div className="flex items-center gap-2">
-            {mounted && (
-              <button onClick={toggleTheme} className="p-2 rounded-lg text-white hover:bg-white/10 transition-colors duration-300">
-                {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
-              </button>
-            )}
-
-            {/* Mobile Button */}
             <button onClick={() => setIsOpen(!isOpen)} className="md:hidden p-2 text-white">
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>

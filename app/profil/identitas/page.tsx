@@ -42,7 +42,7 @@ export default function IdentitasPage() {
               {/* Foto 3 */}
               <img src="/produksi.jpg" alt="Produksi" className="w-60 h-40 object-cover rounded-xl flex-shrink-0" />
               {/* Foto 4 */}
-              <img src="/bahan-baku.jpg" alt="Bahan Baku" className="w-60 h-40 object-cover rounded-xl flex-shrink-0" />
+              <img src="/bahan-baku.JPG" alt="Bahan Baku" className="w-60 h-40 object-cover rounded-xl flex-shrink-0" />
               {/* Foto 5 */}
               <img src="/Pengolahan.png" alt="Pengolahan" className="w-60 h-40 object-cover rounded-xl flex-shrink-0" />
 

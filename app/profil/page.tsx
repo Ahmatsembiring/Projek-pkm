@@ -6,7 +6,7 @@ const profileSections = [
     title: 'Tim Kami',
     href: '/profil/tim',
     icon: Users,
-    bg: '/tim.jpg',
+    bg: '/tim.JPG',
     description: 'Kenali tim kreatif di balik EcoScent',
   },
   {

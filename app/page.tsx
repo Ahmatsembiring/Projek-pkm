@@ -48,15 +48,15 @@ const recentNews = [
     date: '15 Nov 2025',
     category: 'Announcement',
     views: 124,
-    image: '/akmal.jpg',
+    image: '/akmal.JPG',
   },
   {
     id: 2,
     title: 'Kunjungan Lapangan: Meninjau Kualitas Tanaman Nilam',
     date: '16 Nov 2025',
-    category: 'Achievement',
+    category:'Achievement',
     views: 89,
-    image: '/bersama.jpg',
+    image: '/bersam.JPG',
   },
   {
     id: 3,
@@ -64,7 +64,7 @@ const recentNews = [
     date: '17 Nov 2025',
     category: 'News',
     views: 156,
-    image: '/bahan.jpg',
+    image:'/bahan.JPG',
   },
 ];
 
