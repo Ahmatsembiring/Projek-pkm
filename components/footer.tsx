@@ -70,8 +70,8 @@ export default function Footer() {
             <h3 className="font-semibold mb-4 text-white">Hubungi Kami</h3>
             <ul className="space-y-3 text-sm text-emerald-100">
               <li>
-                <a href="mailto:hello@ecoscent.com" className="hover:text-white smooth-transition">
-                  hello@ecoscent.com
+                <a href="mailto:rihan.123420028@student.itera.ac.id" className="hover:text-white smooth-transition">
+                  rihan.123420028@student.itera.ac.id
                 </a>
               </li>
               <li>
