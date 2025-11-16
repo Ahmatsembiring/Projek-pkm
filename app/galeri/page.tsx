@@ -5,7 +5,7 @@ import { X } from 'lucide-react';
 
 const galleryItems = [
   { id: 1, type: 'image', src: '/gambar16.JPG', alt: 'Logo EcoScent' },
-  { id: 2, type: 'image', src: '/bahan-1.JPG', alt: 'Bahan Produksi' },
+  { id: 2, type: 'image', src: '/bahan-1.jpg', alt: 'Bahan Produksi' },
   { id: 3, type: 'image', src: '/bersam.JPG', alt: 'Tim Bersama' },
   { id: 4, type: 'image', src: '/produksii.JPG', alt: 'Proses Produksi2' },
   { id: 5, type: 'image', src: '/alatt.jpg', alt: 'Produk EcoScent21' },
