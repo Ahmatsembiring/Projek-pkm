@@ -9,7 +9,7 @@ import { reducer } from './../hooks/use-toast';
 const featuredProjects = [
   {
     id: 1,
-    title: 'Aktivitas Farmakologis Minyak Nilam',
+    title: 'Aktivitas Farmakologis Minyak Nilam',
     category: 'Artikel',
     image: '/tumbuhan.jpg',
     description: 'Pembahasan tentang manfaat farmakologis minyak nilam dalam bidang kesehatan dan aromaterapi.',
@@ -17,7 +17,7 @@ const featuredProjects = [
   },
   {
     id: 2,
-    title: 'Pengenalan & Karakteristik Minyak Nilam',
+    title: 'Pengenalan & Karakteristik Minyak Nilam',
     category: 'Jurnal',
     image: '/nilam.jpg',
     description: 'Kajian mengenai sifat, kualitas, dan karakteristik utama minyak nilam dari berbagai perspektif ilmiah.',
@@ -25,7 +25,7 @@ const featuredProjects = [
   },
   {
     id: 3,
-    title: 'Inovasi Aromaterapi Minyak Nilam',
+    title: 'Inovasi Aromaterapi Minyak Nilam',
     category: 'Prosiding',
     image: '/nilam1.jpg',
     description: 'Penelitian pengembangan aromaterapi berbasis minyak nilam dengan pendekatan modern dan aplikatif.',
@@ -54,7 +54,7 @@ const recentNews = [
     id: 2,
     title: 'Kunjungan Lapangan: Meninjau Kualitas Tanaman Nilam',
     date: '16 Nov 2025',
-    category:'Achievement',
+    category: 'Achievement',
     views: 89,
     image: '/bersam.JPG',
   },
@@ -64,7 +64,7 @@ const recentNews = [
     date: '17 Nov 2025',
     category: 'News',
     views: 156,
-    image:'/bahan.JPG',
+    image: '/bahan.JPG',
   },
 ];
 
@@ -72,12 +72,17 @@ export default function Home() {
   return (
     <div className="w-full">
       {/* Hero Section */}
-      <section
-        className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 py-20 overflow-hidden bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/bg.png')" }} // taruh gambar di /public/bg.jpg
-      >
+      <section className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 py-20 overflow-hidden bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/bg.png')" }}>
         {/* overlay gradasi tipis biar teks kontras */}
         <div className="absolute inset-0 bg-gradient-to-b from-emerald-900/20 via-white/70 to-white dark:from-black/30 dark:via-black/40 dark:to-background -z-10" />
+
+        {/* QR Code - Pojok Kanan Bawah dengan Text */}
+        <div className="absolute bottom-8 right-8 flex flex-col items-center gap-2">
+          <p className="text-white text-sm font-bold tracking-wider">This is Our Secret</p>
+          <div className="bg-white p-3 rounded-lg shadow-lg">
+            <img src="/qrcode.png" alt="EcoScent QR Code" className="w-32 h-32 sm:w-40 sm:h-40" />
+          </div>
+        </div>
 
         <div className="max-w-4xl mx-auto text-center space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-1000">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/70 dark:bg-black/40 rounded-full border border-white/50 dark:border-white/10 backdrop-blur">
