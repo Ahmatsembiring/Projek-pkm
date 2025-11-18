@@ -77,10 +77,10 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-b from-emerald-900/20 via-white/70 to-white dark:from-black/30 dark:via-black/40 dark:to-background -z-10" />
 
         {/* QR Code - Pojok Kanan Bawah dengan Text */}
-        <div className="absolute bottom-8 right-8 flex flex-col items-center gap-2">
-          <p className="text-white text-sm font-bold tracking-wider">This is Our Secret</p>
-          <div className="bg-white p-3 rounded-lg shadow-lg">
-            <img src="/qrcode.png" alt="EcoScent QR Code" className="w-32 h-32 sm:w-40 sm:h-40" />
+        <div className="absolute bottom-6 right-4 sm:bottom-8 sm:right-8 flex flex-col items-center gap-1 sm:gap-2 z-10">
+          <p className="text-white text-[10px] sm:text-sm font-bold tracking-wider drop-shadow-lg">This is Our Secret</p>
+          <div className="bg-white p-1.5 sm:p-3 rounded-md sm:rounded-lg shadow-lg">
+            <img src="/qrcode.png" alt="EcoScent QR Code" className="w-16 h-16 sm:w-32 sm:h-32 lg:w-40 lg:h-40" />
           </div>
         </div>
 
@@ -101,7 +101,7 @@ export default function Home() {
             Reed Diffuser premium 100% bahan alami, memadukan keharuman terapi minyak nilam asli Lampung dan stik diffuser inovatif dari limbah rotan. Sehat untuk Anda, lestari untuk Bumi.
           </p>
 
-          <div className="grid grid-cols-3 gap-4 pt-12 max-w-md mx-auto text-sm">
+          <div className="grid grid-cols-3 gap-4 pt-12 max-w-md mx-auto text-sm mb-20 sm:mb-0">
             <div>
               <p className="font-bold text-3xl text-white">15+</p>
               <p className="text-white text-xs">Produk Terjual</p>
